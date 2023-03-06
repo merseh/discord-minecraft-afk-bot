@@ -24,12 +24,9 @@ bot.on('spawn', () => {
   console.log('Minecraft bot spawned!');
 });
 
-bot.on('chat', (username, message) => {
-  if (username !== bot.username && message === 'back') {
-    bot.setControlState('forward', false);
-    bot.setControlState('sneak', false);
-    bot.chat('I am no longer AFK!');
-  }
-});
-
 client.login('token');
+
+
+
+
+
